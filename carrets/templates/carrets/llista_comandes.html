@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% load staticfiles %} {%block estils%}
+<link href="{% static 'css/info-menu.css' %}" rel="stylesheet"> {%endblock%} {% block contingut%}
+<div class="panel-heading">Llista de comandes</div>
+<div class="panel-body">
+    {% if comandes %}
+    <div class="table-responsive">
+        {% for comanda in comandes reversed %}
+        <table id="no-more-tables" class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Nº comanda</th>
+                    <th>Data</th>
+                    <th>Pagament</th>
+                    <th>Pagament</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Nº Com.">{{comanda.comanda_id}}</td>
+                    <td data-title="Data">{{comanda.data}}</td>
+                    <td data-title="Estat">{{comanda.pagament}}</td>
+                    <td data-title="Detall">
+                        <div class="btn-group">
+                            <a class="btn btn-primary" role="button" href="{% url 'carrets:detallComanda' comanda.comanda_id %}">
+                                <span class="oi oi-zoom-in"></span>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No hi ha cap comanda realitzada.</p>
+    {% endif %}
+{% endblock %} {% block scripts %}
+{% endblock %}

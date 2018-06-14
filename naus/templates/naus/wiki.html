@@ -1,0 +1,169 @@
+{% extends 'base.html' %} {% load staticfiles %} {%block estils%}
+<link href="{% static 'css/wiki.css' %}" rel="stylesheet"> {%endblock%} {% block contingut%}
+<section id="seccio_wiki" class="seccio">
+    <div class="container">
+        <h1 class="title-margin text-center filtering-title d-lg-none" id="product-title">Tots elements</h1>
+        <div class="row no-gutters">
+            <div class="menu col-xs-12 col-md-2 " id="data-filter">
+                <span class="info-title">FILTRES</span>
+                <ul class="side-menu-list filter-list">
+                    <li data-filter="all" class="active">Tots elements</li>
+                </ul>
+                <a href="#tipus-collapse" class="info-title collapse-arrow collapsed" data-toggle="collapse" aria-expanded="false">
+					Products
+					<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+				</a>
+                <ul id="tipus-collapse" class="side-menu-list filter-list collapse" aria-expanded="false" style="height: 0px;">
+                    <li data-filter="1">Naus</li>
+                    <li data-filter="2">Armes</li>
+                    <li data-filter="3">Misils</li>
+                    <li data-filter="4">Fabricants</li>
+                </ul>
+                <div class="nav">
+    <strong>Search:</strong>
+    <!-- Search for item text with input value with "data-search" added. -->
+    <input type="text" name="search" placeholder="Search..." data-search>
+</div>
+            </div>
+            <div class="col-xs-12 col-md-10">
+                <h1 class="title-margin filtering-title text-center d-none d-lg-block" id="titol-element">All Products</h1>
+
+                    <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+                    <div class="row filtr-container">
+                        <!--no es la millor manera de ferho, algun metode per no repetirlo estaria be-->
+                        {% if lista_armes %}{% for arma in lista_armes %}
+
+                        <div class="card element-template filtr-item" data-category="2" data-search="{{arma.nom}}">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <img class=" card-img img-fluid" src="{{arma.imatge.url}}" alt="Card image cap">
+                                    <h4 class="card-title">{{arma.nom}}</h4>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-block">
+                                        <p class="card-text">Dany</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{arma.dany}}" aria-valuemin="0" aria-valuemax="50" style="width:{{arma.dany}}%">{{arma.dany}}</div>
+                                        </div>
+                                        <p class="card-text">Velocitat</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{arma.velocitat}}" aria-valuemin="0" aria-valuemax="100" style="width:{{arma.velocitat}}%">{{arma.velocitat}}</div>
+                                        </div>
+                                        <p class="card-text">Calor maxim</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{arma.calormax}}" aria-valuemin="0" aria-valuemax="100" style="width:{{arma.calormax}}%">{{arma.calormax}}</div>
+                                        </div>
+                                        <p class="card-text">Calor generat per tir</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{arma.calorgen}}" aria-valuemin="0" aria-valuemax="100" style="width:{{arma.calorgen}}%">{{arma.calorgen}}</div>
+                                        </div>
+                                        <p class="card-text">Preu credits: {{arma.preucredits}}</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        {% endfor %}{%endif%} {% if lista_misils %}{% for misil in lista_misils %}
+                        
+                        <div class="card element-template filtr-item" data-category="3"data-search="{{misil.nom}}">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <img class=" card-img img-fluid" src="{{misil.imatge.url}}" alt="Card image cap">
+                                    <h4 class="card-title">{{misil.nom}}</h4>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-block">
+                                        <p class="card-text">Dany</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{misil.dany}}" aria-valuemin="0" aria-valuemax="50" style="width:{{misil.dany}}%">{{misil.dany}}</div>
+                                        </div>
+                                        <p class="card-text">Velocitat</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{misil.velocitat}}" aria-valuemin="0" aria-valuemax="100" style="width:{{misil.velocitat}}%">{{misil.velocitat}}</div>
+                                        </div>
+                                        <p class="card-text">Salut</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{misil.salut}}" aria-valuemin="0" aria-valuemax="100" style="width:{{misil.salut}}%">{{misil.salut}}</div>
+                                        </div>
+                                        <p class="card-text">Misil guiat: {{misil.guiat}}</p>
+
+                                        <p class="card-text">Preu credits: {{misil.preucredits}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {% endfor %}{%endif%} {% if lista_naus %}{% for nau in lista_naus %}
+                        
+                        <div class="card element-template filtr-item" data-category="1" data-search="{{nau.nom}}">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <img class=" card-img img-fluid" src="{{nau.imatge.url}}" alt="Card image cap">
+                                    <h4 class="card-title">{{nau.nom}}</h4>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-block">
+                                        <p class="card-text">Salut</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{nau.salut}}" aria-valuemin="0" aria-valuemax="10000" style="width:{{nau.salut}}%">{{nau.salut}}</div>
+                                        </div>
+                                        <p class="card-text">Escuts</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{nau.escuts}}" aria-valuemin="0" aria-valuemax="50" style="width:{{nau.escuts}}%">{{nau.escuts}}</div>
+                                        </div>
+                                        <p class="card-text">Velocitat</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{nau.velocitat}}" aria-valuemin="0" aria-valuemax="100" style="width:{{nau.velocitat}}%">{{nau.velocitat}}</div>
+                                        </div>
+                                        <p class="card-text">Disipacio de calor</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{nau.disipaciocal}}" aria-valuemin="0" aria-valuemax="50" style="width:{{nau.disipaciocal}}%">{{nau.disipaciocal}}</div>
+                                        </div>
+                                        <p class="card-text">Armes per defecte:{{nau.armes}}</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{nau.numarmes}}" aria-valuemin="0" aria-valuemax="10" style="width:{{nau.numarmes}}%">{{nau.numarmes}}</div>
+                                        </div>
+                                        {% if nau.misils %}
+                                        <p class="card-text">Misil per defecte:{{nau.misil}}</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="{{nau.armes}}" aria-valuemin="0" aria-valuemax="5" style="width:{{nau.nummisils}}%">{{nau.nummisils}}</div>
+                                        </div>
+                                        {%endif%}
+                                        <p class="card-text">Preu: {{nau.preu}}</p>
+                                        <p class="card-text">Preu credits: {{nau.preucredits}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {% endfor %}{%endif%} {% if lista_fabricants %}{% for fabricant in lista_fabricants %}
+                        
+                        <div class="card element-template filtr-item" data-category="4"data-search="{{fabricant.nom}}">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <img class=" card-img img-fluid" src="{{fabricant.logo.url}}" alt="Card image cap">
+                                    <h4 class="card-title">{{fabricant.nom}}</h4>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-block">
+                                        <p class="card-text">{{fabricant.especialitzacio}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {% endfor %}{%endif%}
+                    </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{% endblock %} {% block scripts %}
+<script src="{% static 'js/jquery.filterizr.min.js' %}"></script>
+<script src="{% static 'js/initialize.filterizr.js' %}"></script>
+{% endblock %}

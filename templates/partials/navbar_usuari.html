@@ -1,0 +1,36 @@
+{% if user.is_anonymous %}
+<li class="nav-item">
+    <a href="{% url 'login' %}">Login</a>
+</li>
+{% else %} {% if user.is_staff %}
+<li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle capitalize" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{request.user.username}} <span class="caret"></span></a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="{% url 'ciutadaestelar:naus' %}"><span class="oi oi-list-alt dropdown-li-space"></span> Mostrar Naus</a>
+        <a class="dropdown-item" href="{% url 'ciutadaestelar:armes' %}"><span class="oi oi-list-alt dropdown-li-space"></span> Mostrar Armes</a>
+        <a class="dropdown-item" href="{% url 'ciutadaestelar:misils' %}"><span class="oi oi-list-alt dropdown-li-space"></span> Mostrar Misils</a>
+        <a class="dropdown-item" href="{% url 'ciutadaestelar:fabricants' %}"><span class="oi oi-list-alt dropdown-li-space"></span> Mostrar Fabricants</a>
+        <a class="dropdown-item" href="{% url 'ciutadaestelar:afegirnau' %}"><span class="oi oi-plus dropdown-li-space"></span> Afegir Nau</a>
+        <a class="dropdown-item" href="{% url 'ciutadaestelar:afegirarma' %}"><span class="oi oi-plus dropdown-li-space"></span> Afegir Arma</a>
+        <a class="dropdown-item" href="{% url 'ciutadaestelar:afegirmisil' %}"><span class="oi oi-plus dropdown-li-space"></span> Afegir Misil</a>
+        <a class="dropdown-item" href="{% url 'ciutadaestelar:afegirfabricant' %}"><span class="oi oi-plus dropdown-li-space"></span> Afegir Fabricant</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="{% url 'backups:exportXML' %}"><span class="oi oi-export dropdown-li-space"></span> Exportar dades a XML</a>
+        <a class="dropdown-item" href="{% url 'backups:importXML' %}"><span class="oi oi-import dropdown-li-space"></span> Importar dades a XML</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="{% url 'logout' %}"><span class="oi oi-log-out dropdown-li-space"></span> Sortir</a>
+    </div>
+</li>
+{% else %}
+<a class="wall-entry icon-space-left" href="{% url 'carrets:veureComanda' %}"><span class="oi oi-cart"></span></a>
+<li class="nav-item dropdown dropdown-menu-left">
+    <a href="#" class="nav-link dropdown-toggle capitalize" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{request.user.username}} <span class="caret"></span></a>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="{% url 'perfil' %}"><span class="oi oi-wrench dropdown-li-space"></span>Perfil</a>
+        <a class="dropdown-item" href="{% url 'carrets:llistaComandes' %}"><span class="oi oi-tag dropdown-li-space"></span> Les meves compres</a>
+        <a class="dropdown-item" href="{% url 'hangar' %}"><span class="oi oi-wrench dropdown-li-space"></span>Hangar</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="{% url 'logout' %}"><span class="oi oi-log-out dropdown-li-space"></span> Sortir</a>
+    </div>
+</li>
+{% endif %} {% endif %}

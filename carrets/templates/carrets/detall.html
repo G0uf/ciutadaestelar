@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% load staticfiles %} {%block estils%}
+<link href="{% static 'css/info-menu.css' %}" rel="stylesheet"> {%endblock%} {% block contingut%}
+<div class="panel-body">
+    {% if comanda %}
+    <div class="table-responsive">
+        <table id="no-more-tables" class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th class="th-hidden">Imatge</th>
+                    <th>Unitats</th>
+                    <th>Preu</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for linia in comanda %}
+                <tr>
+                    <td data-title="Nom">{{linia.nau.nom}}</td>
+                    <td class="td-hidden"><img src="{{linia.nau.imatge.url}}" alt="{{linia.nau.nom}}" style="width:100px;"></td>
+                    <td data-title="Unitats">{{linia.quantitat}}</td>
+                    <td data-title="Preu">{{linia.preu}} €</td>
+                </tr>
+                {% endfor %}
+                <tr>
+                    <th class="text-right th-hidden" colspan="3">Preu total</th>
+                    <td data-title="Total">{{preu_comanda}} €</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <p>No hi ha cap comanda amb aquest número de ID.</p>
+    {% endif %}
+</div>
+{% endblock %} {% block scripts %}</script>
+{% endblock %}

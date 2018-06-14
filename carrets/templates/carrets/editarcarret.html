@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% load staticfiles %} {% load crispy_forms_tags %} {%block estils%}
+<link href="{% static 'css/botiga.css' %}" rel="stylesheet">
+<link href="{% static 'css/info-menu.css' %}" rel="stylesheet">{%endblock%} {% block contingut%}
+<div class="panel-heading">Afegint al carret</div>
+<div class="panel-body">
+    <div class="panel-body" ng-app="myApp">
+        {% if nau %}
+        <form id="form" method="post">
+            <div class="table-responsive">
+                <table id="no-more-tables" class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Imatge</th>
+                            <th>Unitats</th>
+                            <th>Preu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-title="Nom">{{nau.nom}}</td>
+                            <td data-title="Imatge">
+                                <img src="{{nau.imatge.url}}" style="width:100px;">
+                            </td>
+                            <td data-title="Unitats" ng-model="quantity">{% crispy form %}</td>
+                            <td data-title="Preu" ng-model="price">{{nau.preu}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-group">
+                    <a class="btn btn-info" role="button" href="{{request.META.HTTP_REFERER}}"><span class="glyphicon glyphicon-remove"></span> Enrere</a>
+                    <button class="btn btn-primary" role="button" type="submit" form="form" value="Submit"><span class="glyphicon glyphicon-ok"></span> Confirmar producte</button>
+                </div>
+            </div>
+        </form>
+        {% else %}
+        <p>La ID del producte no és vàlida.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="contenttypes.contenttype" pk="1">
+    <field name="app_label" type="CharField">admin</field>
+    <field name="model" type="CharField">logentry</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="2">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">permission</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="3">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">group</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="4">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">user</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="5">
+    <field name="app_label" type="CharField">contenttypes</field>
+    <field name="model" type="CharField">contenttype</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="6">
+    <field name="app_label" type="CharField">sessions</field>
+    <field name="model" type="CharField">session</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="7">
+    <field name="app_label" type="CharField">carrets</field>
+    <field name="model" type="CharField">comanda</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="8">
+    <field name="app_label" type="CharField">carrets</field>
+    <field name="model" type="CharField">linia</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="9">
+    <field name="app_label" type="CharField">naus</field>
+    <field name="model" type="CharField">fabricant</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="10">
+    <field name="app_label" type="CharField">naus</field>
+    <field name="model" type="CharField">arma</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="11">
+    <field name="app_label" type="CharField">naus</field>
+    <field name="model" type="CharField">misil</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="12">
+    <field name="app_label" type="CharField">naus</field>
+    <field name="model" type="CharField">nau</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="13">
+    <field name="app_label" type="CharField">usuaris</field>
+    <field name="model" type="CharField">hangar</field>
+  </object>
+  <object model="sessions.session" pk="24bwq0t4vbflu99plpw91ycxat0y9i9x">
+    <field name="session_data" type="TextField">NTQ1YjM3OWNhMWQ2YzFiY2U5OTY2OTg2ZmQwMzQ3MjE4YzVhNjU2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZWIxNTkxOGE0MGJlOWMzNTZiMmJlYzYyZTZlM2RjNTM2M2Q2YjM2NSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-05-28T14:42:10.690427+00:00</field>
+  </object>
+  <object model="sessions.session" pk="34qdk6j5vq8xdpzixy1la8j27un2l6m2">
+    <field name="session_data" type="TextField">NTQ1YjM3OWNhMWQ2YzFiY2U5OTY2OTg2ZmQwMzQ3MjE4YzVhNjU2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZWIxNTkxOGE0MGJlOWMzNTZiMmJlYzYyZTZlM2RjNTM2M2Q2YjM2NSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-11T20:14:56.644090+00:00</field>
+  </object>
+  <object model="sessions.session" pk="3vhk6s889liq7z87gkkkaoudsjj66eqq">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-08T18:20:40.697424+00:00</field>
+  </object>
+  <object model="sessions.session" pk="7185j1kcidjmtytbl6jgurlv5j77yx9k">
+    <field name="session_data" type="TextField">NTQ1YjM3OWNhMWQ2YzFiY2U5OTY2OTg2ZmQwMzQ3MjE4YzVhNjU2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZWIxNTkxOGE0MGJlOWMzNTZiMmJlYzYyZTZlM2RjNTM2M2Q2YjM2NSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-11T16:30:09.757039+00:00</field>
+  </object>
+  <object model="sessions.session" pk="8c0oj4cd8uptu6dh3irxfvxqjv7q4nvi">
+    <field name="session_data" type="TextField">NTQ1YjM3OWNhMWQ2YzFiY2U5OTY2OTg2ZmQwMzQ3MjE4YzVhNjU2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZWIxNTkxOGE0MGJlOWMzNTZiMmJlYzYyZTZlM2RjNTM2M2Q2YjM2NSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-09T17:38:15.660213+00:00</field>
+  </object>
+  <object model="sessions.session" pk="8dz5bvhvrh10zod2mrrxnzel5nydcwc6">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-10T16:52:53.851101+00:00</field>
+  </object>
+  <object model="sessions.session" pk="aok1vjvw3x17p0nzp3u0s1aot8hjjmm6">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-11T22:45:57.876445+00:00</field>
+  </object>
+  <object model="sessions.session" pk="ec8k405nbiy9lko2pno77p7pya5904mo">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-05T16:47:17.147308+00:00</field>
+  </object>
+  <object model="sessions.session" pk="hd01iarfl84kkcohtdblz7ukjh9evgxv">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-07T19:23:46.086813+00:00</field>
+  </object>
+  <object model="sessions.session" pk="hy8tkrpqumu60mn4kcmanb1mq7n2bxfw">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-05-28T15:44:40.289878+00:00</field>
+  </object>
+  <object model="sessions.session" pk="mnkwfl1mo8s9y4iszqvsyjapg89rk2k1">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-05T21:09:40.007986+00:00</field>
+  </object>
+  <object model="sessions.session" pk="pmhi4m1rwxwliy9wms4nb2cvxycb2pk3">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-10T15:52:23.937115+00:00</field>
+  </object>
+  <object model="sessions.session" pk="pntnq6jw6sf650har4rxhpnysxlnjhbj">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-08T20:06:31.251720+00:00</field>
+  </object>
+  <object model="sessions.session" pk="s91v43k8pc1de1trvyra3fdis8ajck0b">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-11T11:23:22.032765+00:00</field>
+  </object>
+  <object model="sessions.session" pk="tp83c26jhzednofnpeyni66vu5ep51dk">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-10T16:58:53.510964+00:00</field>
+  </object>
+  <object model="sessions.session" pk="xzbl05eumqzfbszxgbuq2786ojzymwnc">
+    <field name="session_data" type="TextField">NTQ1YjM3OWNhMWQ2YzFiY2U5OTY2OTg2ZmQwMzQ3MjE4YzVhNjU2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZWIxNTkxOGE0MGJlOWMzNTZiMmJlYzYyZTZlM2RjNTM2M2Q2YjM2NSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-05-25T16:34:38.472292+00:00</field>
+  </object>
+  <object model="sessions.session" pk="y6uts2qyvrmo9o1ir7y159i23s9atxjw">
+    <field name="session_data" type="TextField">Mzg0ZGY3MmYzOTY3MGEyNmUyMDBhOGY5YTRlMDY5YzJmNzQ3NGQwMjp7Il9hdXRoX3VzZXJfaGFzaCI6ImViMTU5MThhNDBiZTljMzU2YjJiZWM2MmU2ZTNkYzUzNjNkNmIzNjUiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-06T22:48:22.832899+00:00</field>
+  </object>
+  <object model="sessions.session" pk="zkutva1rrmere5hwsq6vf2ab7skum4c9">
+    <field name="session_data" type="TextField">NTQ1YjM3OWNhMWQ2YzFiY2U5OTY2OTg2ZmQwMzQ3MjE4YzVhNjU2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZWIxNTkxOGE0MGJlOWMzNTZiMmJlYzYyZTZlM2RjNTM2M2Q2YjM2NSIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=</field>
+    <field name="expire_date" type="DateTimeField">2018-06-11T11:18:03.963864+00:00</field>
+  </object>
+  <object model="naus.fabricant" pk="1">
+    <field name="nom" type="CharField">Anvil Aerospace</field>
+    <field name="logo" type="FileField">Logo/anvil.png</field>
+    <field name="especialitzacio" type="TextField">Aquest fabricant s'especialitza principalment en la velocitat de les naus, alleugerent pes eliminant blindatge</field>
+  </object>
+  <object model="naus.fabricant" pk="2">
+    <field name="nom" type="CharField">Kruger</field>
+    <field name="logo" type="FileField">Logo/kruger.png</field>
+    <field name="especialitzacio" type="TextField">Kruger es una companyia que es centra en la capacitat de resistencia de la nau, degut a aixo el pes del blindatge fa que no siguin naus molt maniobrables</field>
+  </object>
+  <object model="naus.fabricant" pk="3">
+    <field name="nom" type="CharField">MISC</field>
+    <field name="logo" type="FileField">Logo/misc.png</field>
+    <field name="especialitzacio" type="TextField">Gracies a ser un gran conglomerat de companyies MISC disposa de la tecnologia mes avançada. si be les seves naus no destaquen en velocitat o defensa la tecnologia en els seus escuts o disipadors no tenen igual</field>
+  </object>
+  <object model="naus.arma" pk="2">
+    <field name="nom" type="CharField">ARMA</field>
+    <field name="imatge" type="FileField">Arma/test_arma.jpeg</field>
+    <field name="silueta" type="FileField">Arma/test_armaperfil.png</field>
+    <field name="descripcio" type="TextField">descripcio del arma</field>
+    <field name="dany" type="IntegerField">5</field>
+    <field name="velocitat" type="IntegerField">17</field>
+    <field name="calormax" type="IntegerField">50</field>
+    <field name="calorgen" type="IntegerField">2</field>
+    <field name="preucredits" type="IntegerField">500</field>
+  </object>
+  <object model="naus.arma" pk="3">
+    <field name="nom" type="CharField">K&amp;W REPEATER</field>
+    <field name="imatge" type="FileField">Arma/testarma1.png</field>
+    <field name="silueta" type="FileField">Arma/testarma1_perfil.png</field>
+    <field name="descripcio" type="TextField">cano repetidor klaus &amp; werner
+Poc dany per impacte pero molta velocitat, una capacitat de calor normal</field>
+    <field name="dany" type="IntegerField">5</field>
+    <field name="velocitat" type="IntegerField">20</field>
+    <field name="calormax" type="IntegerField">100</field>
+    <field name="calorgen" type="IntegerField">5</field>
+    <field name="preucredits" type="IntegerField">500</field>
+  </object>
+  <object model="naus.misil" pk="1">
+    <field name="nom" type="CharField">Talon</field>
+    <field name="imatge" type="FileField">Misil/talon.png</field>
+    <field name="silueta" type="FileField">Misil/talon_perfil.png</field>
+    <field name="descripcio" type="TextField">Misil sense sistema de guia, rapid i bastant dany, poca vida</field>
+    <field name="dany" type="IntegerField">80</field>
+    <field name="velocitat" type="IntegerField">40</field>
+    <field name="salut" type="IntegerField">30</field>
+    <field name="guiat" type="BooleanField">False</field>
+    <field name="preucredits" type="IntegerField">700</field>
+  </object>
+  <object model="naus.misil" pk="2">
+    <field name="nom" type="CharField">FSKI</field>
+    <field name="imatge" type="FileField">Misil/fski.png</field>
+    <field name="silueta" type="FileField">Misil/fski_perfil.png</field>
+    <field name="descripcio" type="TextField">Misil guiat, no molt rapid pero bastant salut</field>
+    <field name="dany" type="IntegerField">60</field>
+    <field name="velocitat" type="IntegerField">20</field>
+    <field name="salut" type="IntegerField">50</field>
+    <field name="guiat" type="BooleanField">True</field>
+    <field name="preucredits" type="IntegerField">1000</field>
+  </object>
+  <object model="naus.nau" pk="1">
+    <field name="nom" type="CharField">NAU</field>
+    <field name="imatge" type="FileField">Nau/_86.JPG</field>
+    <field name="silueta" type="FileField">Nau/its_no_zaku_boy_by_humantyphoon89-d6hz4ja.jpg</field>
+    <field name="descripcio" type="TextField">descripcio</field>
+    <field name="fabricant" rel="ManyToOneRel" to="naus.fabricant">2</field>
+    <field name="video" type="CharField">https://youtu.be/fxEWc6IvtQc</field>
+    <field name="salut" type="IntegerField">5000</field>
+    <field name="escuts" type="IntegerField">1000</field>
+    <field name="velocitat" type="IntegerField">30</field>
+    <field name="disipaciocal" type="IntegerField">3</field>
+    <field name="numarmes" type="IntegerField">6</field>
+    <field name="nummisils" type="IntegerField">3</field>
+    <field name="misil" rel="ManyToOneRel" to="naus.misil">2</field>
+    <field name="preucredits" type="IntegerField">300000</field>
+    <field name="preu" type="DecimalField">30.00</field>
+    <field name="armes" rel="ManyToManyRel" to="naus.arma"><object pk="3"></object></field>
+  </object>
+  <object model="auth.permission" pk="1">
+    <field name="name" type="CharField">Can add log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">add_logentry</field>
+  </object>
+  <object model="auth.permission" pk="2">
+    <field name="name" type="CharField">Can change log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">change_logentry</field>
+  </object>
+  <object model="auth.permission" pk="3">
+    <field name="name" type="CharField">Can delete log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">delete_logentry</field>
+  </object>
+  <object model="auth.permission" pk="4">
+    <field name="name" type="CharField">Can add permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">add_permission</field>
+  </object>
+  <object model="auth.permission" pk="5">
+    <field name="name" type="CharField">Can change permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">change_permission</field>
+  </object>
+  <object model="auth.permission" pk="6">
+    <field name="name" type="CharField">Can delete permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">delete_permission</field>
+  </object>
+  <object model="auth.permission" pk="7">
+    <field name="name" type="CharField">Can add group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">add_group</field>
+  </object>
+  <object model="auth.permission" pk="8">
+    <field name="name" type="CharField">Can change group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">change_group</field>
+  </object>
+  <object model="auth.permission" pk="9">
+    <field name="name" type="CharField">Can delete group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">delete_group</field>
+  </object>
+  <object model="auth.permission" pk="10">
+    <field name="name" type="CharField">Can add user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">add_user</field>
+  </object>
+  <object model="auth.permission" pk="11">
+    <field name="name" type="CharField">Can change user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">change_user</field>
+  </object>
+  <object model="auth.permission" pk="12">
+    <field name="name" type="CharField">Can delete user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">delete_user</field>
+  </object>
+  <object model="auth.permission" pk="13">
+    <field name="name" type="CharField">Can add content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">add_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="14">
+    <field name="name" type="CharField">Can change content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">change_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="15">
+    <field name="name" type="CharField">Can delete content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">delete_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="16">
+    <field name="name" type="CharField">Can add session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">add_session</field>
+  </object>
+  <object model="auth.permission" pk="17">
+    <field name="name" type="CharField">Can change session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">change_session</field>
+  </object>
+  <object model="auth.permission" pk="18">
+    <field name="name" type="CharField">Can delete session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">delete_session</field>
+  </object>
+  <object model="auth.permission" pk="19">
+    <field name="name" type="CharField">Can add comanda</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">add_comanda</field>
+  </object>
+  <object model="auth.permission" pk="20">
+    <field name="name" type="CharField">Can change comanda</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">change_comanda</field>
+  </object>
+  <object model="auth.permission" pk="21">
+    <field name="name" type="CharField">Can delete comanda</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">delete_comanda</field>
+  </object>
+  <object model="auth.permission" pk="22">
+    <field name="name" type="CharField">Can add linia</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">add_linia</field>
+  </object>
+  <object model="auth.permission" pk="23">
+    <field name="name" type="CharField">Can change linia</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">change_linia</field>
+  </object>
+  <object model="auth.permission" pk="24">
+    <field name="name" type="CharField">Can delete linia</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">delete_linia</field>
+  </object>
+  <object model="auth.permission" pk="25">
+    <field name="name" type="CharField">Can add fabricant</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">add_fabricant</field>
+  </object>
+  <object model="auth.permission" pk="26">
+    <field name="name" type="CharField">Can change fabricant</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">change_fabricant</field>
+  </object>
+  <object model="auth.permission" pk="27">
+    <field name="name" type="CharField">Can delete fabricant</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">delete_fabricant</field>
+  </object>
+  <object model="auth.permission" pk="28">
+    <field name="name" type="CharField">Can add arma</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">add_arma</field>
+  </object>
+  <object model="auth.permission" pk="29">
+    <field name="name" type="CharField">Can change arma</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">change_arma</field>
+  </object>
+  <object model="auth.permission" pk="30">
+    <field name="name" type="CharField">Can delete arma</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">delete_arma</field>
+  </object>
+  <object model="auth.permission" pk="31">
+    <field name="name" type="CharField">Can add misil</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">add_misil</field>
+  </object>
+  <object model="auth.permission" pk="32">
+    <field name="name" type="CharField">Can change misil</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">change_misil</field>
+  </object>
+  <object model="auth.permission" pk="33">
+    <field name="name" type="CharField">Can delete misil</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">delete_misil</field>
+  </object>
+  <object model="auth.permission" pk="34">
+    <field name="name" type="CharField">Can add nau</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">add_nau</field>
+  </object>
+  <object model="auth.permission" pk="35">
+    <field name="name" type="CharField">Can change nau</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">change_nau</field>
+  </object>
+  <object model="auth.permission" pk="36">
+    <field name="name" type="CharField">Can delete nau</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">delete_nau</field>
+  </object>
+  <object model="auth.permission" pk="37">
+    <field name="name" type="CharField">Can add hangar</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">13</field>
+    <field name="codename" type="CharField">add_hangar</field>
+  </object>
+  <object model="auth.permission" pk="38">
+    <field name="name" type="CharField">Can change hangar</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">13</field>
+    <field name="codename" type="CharField">change_hangar</field>
+  </object>
+  <object model="auth.permission" pk="39">
+    <field name="name" type="CharField">Can delete hangar</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">13</field>
+    <field name="codename" type="CharField">delete_hangar</field>
+  </object>
+  <object model="auth.user" pk="1">
+    <field name="password" type="CharField">pbkdf2_sha256$24000$xnqxQsEjjZ0G$rMTgPgNpuh0ji8Nzhx6JLkgOeyBEgt2NnfKmLepqe1c=</field>
+    <field name="last_login" type="DateTimeField">2018-06-11T21:45:57.868321+00:00</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="username" type="CharField">staff</field>
+    <field name="first_name" type="CharField"></field>
+    <field name="last_name" type="CharField"></field>
+    <field name="email" type="CharField">staff@ciutadaestelar.cat</field>
+    <field name="is_staff" type="BooleanField">True</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="date_joined" type="DateTimeField">2018-05-25T15:20:16.245087+00:00</field>
+    <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+    <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+  </object>
+</django-objects>
